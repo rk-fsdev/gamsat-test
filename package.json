@@ -6,6 +6,7 @@
     "@material-ui/core": "^4.5.0",
     "@material-ui/icons": "^4.4.3",
     "connected-react-router": "^6.5.2",
+    "fireworks": "^2.2.5",
     "history": "^4.10.1",
     "immutable": "^4.0.0-rc.12",
     "node-sass": "^4.12.0",

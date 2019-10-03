@@ -2,15 +2,17 @@ import React from 'react';
 import { Divider, Input, IconButton } from '@material-ui/core';
 import { Send } from '@material-ui/icons';
 
-import { OUT_MESSAGE } from '../../constants';
+import { OUT_MESSAGE } from '../../containers/ChatWidget/constants';
 import './style.scss';
 
 const MessageInput = props => {
   const handleSubmit = e => {
     e.preventDefault();
-    props.addMessage(OUT_MESSAGE, props.value, false);
-    props.handleChange('');
-    props.responseRequested();
+    if (!!props.value) {
+      props.addMessage(OUT_MESSAGE, props.value, false);
+      props.handleChange('');
+      props.responseRequested();
+    }
   };
 
   const handleChange = e => {

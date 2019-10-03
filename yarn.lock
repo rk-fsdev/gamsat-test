@@ -1477,7 +1477,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react@*", "@types/react@^16.8.22":
   version "16.9.4"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.4.tgz#de8cf5e5e2838659fb78fa93181078469eeb19fc"
   integrity sha512-ItGNmJvQ0IvWt8rbk5PLdpdQhvBVxAaXI9hDlx7UMd8Ie1iMIuwMNiKeTfmVN517CdplpyXvA22X4zm4jGGZnw==
@@ -4399,6 +4399,14 @@ find-up@^2.0.0, find-up@^2.1.0:
   integrity sha1-RdG35QbHF93UgndaK3eSCjwMV6c=
   dependencies:
     locate-path "^2.0.0"
+
+fireworks@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/fireworks/-/fireworks-2.2.5.tgz#f2465f0ad24d3b8458b2e56419286141b78e18ad"
+  integrity sha512-L/eLYdIWHE/ZcuWg4wv2l4BGlXypFqIHghbu4gIwPCkzHAdFa4eImZU3RLCyEna9kJoz8zSYCdoHwzAroeYwmg==
+  optionalDependencies:
+    "@types/react" "^16.8.22"
+    react "^16.8.6"
 
 flat-cache@^2.0.1:
   version "2.0.1"
@@ -8920,7 +8928,7 @@ react-transition-group@^4.3.0:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@^16.10.1:
+react@^16.10.1, react@^16.8.6:
   version "16.10.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.10.1.tgz#967c1e71a2767dfa699e6ba702a00483e3b0573f"
   integrity sha512-2bisHwMhxQ3XQz4LiJJwG3360pY965pTl/MRrZYxIBKVj4fOHoDs5aZAkYXGxDRO1Li+SyjTAilQEbOmtQJHzA==

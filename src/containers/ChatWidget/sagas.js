@@ -1,10 +1,11 @@
-import { all, takeLatest, fork, put } from 'redux-saga/effects';
+import { all, takeLatest, fork, put, delay } from 'redux-saga/effects';
 import randomSentence from 'random-sentence';
 
 import { addMessage, RESPONSE_REQUESTED } from './actions';
 import { IN_MESSAGE } from './constants';
 
 function* addMessageRequested() {
+  yield delay(800);
   yield put(addMessage(IN_MESSAGE, randomSentence({ min: 3, max: 10 })));
 }
 

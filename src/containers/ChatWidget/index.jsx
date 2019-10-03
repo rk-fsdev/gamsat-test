@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import * as selectors from './selectors';
 import * as actions from './actions';
-import { MessageInput, MessageList } from './components';
+import { MessageInput, MessageList } from '../../components';
 import './style.scss';
 
 class ChatWidget extends Component {
