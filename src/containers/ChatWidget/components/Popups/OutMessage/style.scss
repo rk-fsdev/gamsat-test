@@ -1,0 +1,11 @@
+.message-out {
+  display: flex;
+  justify-content: flex-end;
+  p {
+    background-color: lightblue;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    max-width: 80%;
+  }
+}
