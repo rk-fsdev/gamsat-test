@@ -9,7 +9,7 @@ const MessageInput = props => {
   const handleSubmit = e => {
     e.preventDefault();
     if (!!props.value) {
-      props.addMessage(OUT_MESSAGE, props.value, false);
+      props.addMessage(OUT_MESSAGE, props.value);
       props.handleChange('');
       props.responseRequested();
     }

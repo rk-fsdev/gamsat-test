@@ -10,7 +10,7 @@ export const responseRequested = () => ({
 });
 
 export const ADD_MESSAGE = 'ADD_MESSAGE';
-export const addMessage = (type, text, isSeen) => ({
+export const addMessage = (type, text) => ({
   type: ADD_MESSAGE,
-  message: { type, text, isSeen }
+  message: { type, text }
 });

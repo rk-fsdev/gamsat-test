@@ -37,7 +37,7 @@ const mapStateToProps = () =>
 const mapDispatchToProps = dispatch => ({
   updateCurrentMessageText: messageText => dispatch(actions.updateCurrentMessage(messageText)),
   responseRequested: () => dispatch(actions.responseRequested()),
-  addMessage: (type, text, isSeen) => dispatch(actions.addMessage(type, text, isSeen))
+  addMessage: (type, text) => dispatch(actions.addMessage(type, text))
 });
 
 export default connect(

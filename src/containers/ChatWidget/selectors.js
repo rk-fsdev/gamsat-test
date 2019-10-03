@@ -11,5 +11,5 @@ export const getCurrentMessageText = () =>
 export const getMessages = () =>
   createSelector(
     chatWidgetSelector,
-    chatWidgetState => chatWidgetState.get('messages').toJS()
+    chatWidgetState => chatWidgetState.get('messages')
   );
