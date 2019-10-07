@@ -6,7 +6,7 @@ import { IN_MESSAGE } from './constants';
 
 function* addMessageRequested() {
   yield delay(800);
-  yield put(addMessage(IN_MESSAGE, randomSentence({ min: 3, max: 10 })));
+  yield put(addMessage(IN_MESSAGE, randomSentence({ min: 14, max: 20 })));
 }
 
 function* addMessageRequestedListener() {

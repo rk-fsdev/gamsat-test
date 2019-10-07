@@ -9,7 +9,6 @@ const MessageList = React.memo(({ messages }) => {
   React.useEffect(() => {
     messagesEnd.scrollIntoView({ behavior: 'smooth' });
   });
-
   return (
     <div className="message-list">
       <h1>Messages</h1>
